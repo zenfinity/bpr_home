@@ -5,9 +5,15 @@
 
 */
 
+/* Imports */
+
+.monospace {
+  font-family: 'Major Mono Display', monospace;
+}
 
 .sans-serif {
   font-family: -apple-system, BlinkMacSystemFont,
+              'Open Sans'
                'avenir next', avenir,
                'helvetica neue', helvetica,
                ubuntu,

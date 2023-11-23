@@ -6,3 +6,12 @@
 
 */
 
+body {
+  /* See _variable.css   */
+  font-family: var(--sans-serif), var(--font-family), var(--monospace);
+}
+
+template {
+  /* See _variable.css   */
+  font-family: var(--sans-serif), var(--font-family);
+}
