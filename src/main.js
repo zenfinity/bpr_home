@@ -1,7 +1,10 @@
 /* Set up using Vue 3 */
 import { createApp } from 'vue'
-import './css/tachyons.css'
+
 import App from './App.vue'
+
+// import VueRouter from 'vue-router'
+import './css/tachyons.css'
 
 // Currently using fontawesome in CSS only
 // /* import the fontawesome core */

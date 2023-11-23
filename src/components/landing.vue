@@ -18,12 +18,12 @@ const count = ref(0)
         Helping inspire discovery.
       </h2>
       <p class="fw1 f5 mt0 mb3">
-        Bespoke visualizations. Software development and process consulting.
+        Bespoke visualizations. Software development. Consulting.
       </p>
       <div>
         <a class="f6 br-pill bg-bpr-purple no-underline washed-green ba b--dark-gray pv2 ph3 dib mr3"
           href="https://www.linkedin.com/in/imacmoore/">
-          Contact <i class="fa-brands fa-linkedin"></i>
+          Connect <i class="fa-brands fa-linkedin"></i>
         </a>
       </div>
     </article>
