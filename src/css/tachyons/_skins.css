@@ -71,6 +71,8 @@
 .washed-red { color: var(--washed-red); }
 .color-inherit { color: inherit; }
 
+.bpr-purple { color: var(--bpr-purple); }
+
 
 
 /* Background colors */
@@ -134,3 +136,5 @@
 .bg-washed-yellow { background-color: var(--washed-yellow); }
 .bg-washed-red { background-color: var(--washed-red); }
 .bg-inherit { background-color: inherit; }
+
+.bg-bpr-purple { background-color: var(--bpr-purple); }
