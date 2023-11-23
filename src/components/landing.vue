@@ -1,15 +1,15 @@
 <script setup>
 import { ref } from 'vue'
 
-defineProps({
-  msg: String,
-})
+// defineProps({
+//   msg: String,
+// })
 
-const count = ref(0)
+// const count = ref(0)
 </script>
 
 <template>
-  <article class="mw7 center ph3 ph5-ns tc br2 pv5 mid-gray mb5">
+  <article class="mw7 center ph3 ph5-ns tc br2 pt5 mid-gray">
       <h1 class="fw6 f1 f2-ns lh-title mt0 mb3 monospace">
         See Newly.
       </h1>
@@ -21,7 +21,7 @@ const count = ref(0)
         Bespoke visualizations. Software development. Consulting.
       </p>
       <div>
-        <a class="f6 br-pill bg-bpr-purple no-underline washed-green ba b--dark-gray pv2 ph3 dib mr3"
+        <a class="f6 br-pill bg-bpr-purple no-underline dim light-gray ba b--dark-gray pv2 ph3 dib mr3"
           href="https://www.linkedin.com/in/imacmoore/">
           Connect <i class="fa-brands fa-linkedin"></i>
         </a>
@@ -30,7 +30,7 @@ const count = ref(0)
 </template>
 
 <style scoped>
-.read-the-docs {
+/* .read-the-docs {
   color: #888;
-}
+} */
 </style>
