@@ -20,10 +20,14 @@ import { ref } from 'vue'
       <p class="fw1 f5 mt0 mb3">
         Bespoke visualizations. Software development. Consulting.
       </p>
-      <div>
+      <div class="flex justify-center">
         <a class="f6 br-pill bg-bpr-purple no-underline dim light-gray ba b--dark-gray pv2 ph3 dib mr3"
           href="https://www.linkedin.com/in/imacmoore/">
           Connect <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="f6 br-pill bg-bpr-purple no-underline dim light-gray ba b--dark-gray pv2 ph3 dib mr3"
+          href="https://www.linkedin.com/in/imacmoore/">
+          Some of my work <i class="fa-brands fa-github"></i>
         </a>
       </div>
     </article>

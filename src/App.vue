@@ -8,7 +8,6 @@ import VizCards from './components/VizCards.vue'
 
 <template>
   <landing/>
-  <BottomNav/>
   <VizCards/>
 </template>
 

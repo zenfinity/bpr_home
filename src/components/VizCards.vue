@@ -1,8 +1,9 @@
 <template>
-  <article>
-    <h2 class="f3 fw4 pa3 mv0 mid-gray underline monospace tc">Cool Vizzes.</h2>
-    <div class="cf pa2">
-      <div class="fl w-50 w-25-m w-20-l pa2">
+  <article class="mt5">
+    <h2 class="f3 fw4 pa3 mv0 mid-gray underline monospace tc">Cool Vizzes. (Not mine.)</h2>
+    <div class="mw9 center ph3-ns">
+      <div class="cf ph2-ns">
+      <div class="fl w-100 w-50-ns pa2">
         <a
           href="https://vote.minneapolismn.gov/results-data/election-results/2023/council-ward-7/"
           class="db link dim tc">
@@ -20,7 +21,7 @@
           </dl>
         </a>
       </div>
-      <div class="fl w-50 w-25-m w-20-l pa2">
+      <div class="fl w-100 w-50-ns pa2">
         <a
           href="http://hint.fm/wind/"
           class="db link dim tc">
@@ -38,6 +39,7 @@
           </dl>
         </a>
       </div>
+    </div>
     </div>
   </article>
 </template>
