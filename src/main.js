@@ -4,7 +4,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 // import VueRouter from 'vue-router'
-import './css/tachyons.css'
+import '/src/css/tachyons/tachyons.css'
 
 // Currently using fontawesome in CSS only
 // /* import the fontawesome core */
