@@ -26,7 +26,7 @@ import { ref } from 'vue'
           Connect <i class="fa-brands fa-linkedin"></i>
         </a>
         <a class="f6 br-pill bg-bpr-purple no-underline dim light-gray ba b--dark-gray pv2 ph3 dib mr3"
-          href="https://www.linkedin.com/in/imacmoore/">
+          href="https://github.com/zenfinity">
           Some of my work <i class="fa-brands fa-github"></i>
         </a>
       </div>
