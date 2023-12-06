@@ -9,7 +9,7 @@ import { ref } from 'vue'
 </script>
 
 <template>
-  <article class="mw7 center ph3 ph5-ns tc br2 pt5 mid-gray">
+  <article class="mw7 center ph3 ph5-ns tc br2 pt5 gray">
       <h1 class="fw6 f1 f2-ns lh-title mt0 mb3 monospace">
         See Newly.
       </h1>

@@ -1,6 +1,6 @@
 <template>
   <article class="mt5">
-    <h2 class="f3 fw4 pa3 mv0 mid-gray underline monospace tc">Cool Vizzes. (Not mine.)</h2>
+    <h2 class="f3 fw4 pa3 mv0 gray underline monospace tc">Cool Vizzes. (Not mine.)</h2>
     <div class="mw9 center ph3-ns">
       <div class="cf ph2-ns">
       <div class="fl w-100 w-50-ns pa2">

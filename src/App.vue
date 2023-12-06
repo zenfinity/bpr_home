@@ -1,16 +1,14 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue';
-import landing from './components/landing.vue';
-import BottomNav from './components/BottomNav.vue';
-import VizCards from './components/VizCards.vue'
-
-</script>
-
 <template>
-  <landing/>
-  <VizCards/>
+  <Landing />
+  <VizCards />
 </template>
 
-<style scoped>
+<script setup>
+  import Landing from "./components/Landing.vue";
+  import LineChart from "./components/LineChart.vue";
+  import VizCards from "./components/VizCards.vue";
+</script>
 
-</style>
+
+
+<style scoped></style>
