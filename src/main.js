@@ -1,10 +1,10 @@
 /* Set up using Vue 3 */
 import { createApp } from 'vue'
-
 import App from './App.vue'
-
-// import VueRouter from 'vue-router'
 import '/src/css/tachyons/tachyons.css'
+// import VueRouter from 'vue-router'
+
+
 
 // Currently using fontawesome in CSS only
 // /* import the fontawesome core */
@@ -19,6 +19,6 @@ import '/src/css/tachyons/tachyons.css'
 // /* add icons to the library */
 // library.add(faUserSecret)
 
-createApp(App)
+const app = createApp(App)
 .mount('#app')
 

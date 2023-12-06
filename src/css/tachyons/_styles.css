@@ -15,3 +15,8 @@ template {
   /* See _variable.css   */
   font-family: var(--sans-serif), var(--font-family);
 }
+
+.active {
+  border: 0.25rem 0.125rem 0.25rem solid #555;
+  border-bottom: none;
+}
