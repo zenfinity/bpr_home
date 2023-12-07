@@ -1,6 +1,6 @@
 <template>
   <nav class="ph3 ph5-ns pb2 pt4">
-    <div class="flex nowrap overflow-x-auto bt bb bw1 b--mid-gray justify-center monospace">
+    <div class="flex nowrap overflow-x-auto bb bw1 b--mid-gray justify-center monospace">
       <a class="link dim gray f5 f4-ns dib pa2  mh2" href="#" title=""
       :class="{ active: activeView === 'coolVizzes' }"
       @click="activeView = 'coolVizzes'"
