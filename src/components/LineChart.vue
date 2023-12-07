@@ -15,13 +15,13 @@ import { ref } from "vue";
 import * as d3 from "d3"
 import csv from "../data/usage.csv"
 
-console.log(csv[0]["Date"])
+console.log(csv[0]['date'])
 
 let kWh = []
 let Dates = []
 
 csv.forEach(element => {
-  console.log(element)
+  console.log(element['date'])
   kWh.push(Number(element.kWh))
   
 });
