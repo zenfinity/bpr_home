@@ -39,6 +39,24 @@
           </dl>
         </a>
       </div>
+      <div class="fl w-100 w-50-ns pa2">
+        <a
+          href="https://experience.arcgis.com/experience/cbf6875974554a74823232f84f563253?src=%E2%80%B9%20Consumption%20%20%20%20%20%20Residential%20Energy%20Consumption%20Survey%20(RECS)-b1"
+          class="db link dim tc">
+          <img
+            src="/src/assets/img/recs-dashboard-carousel.png"
+            alt="wind map"
+            class="w-0 db outline bpr-purple" />
+          <dl class="mt2 f6 lh-copy gray">
+            <dt class="clip">Title</dt>
+            <dd class="ml0 truncate w-100">
+              Residential Energy Consumption Survey
+            </dd>
+            <dt class="clip">By</dt>
+            <dd class="ml0 gray truncate w-100">EIA</dd>
+          </dl>
+        </a>
+      </div>
     </div>
     </div>
   </article>

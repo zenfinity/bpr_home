@@ -27,18 +27,21 @@ import LineChart from "./components/LineChart.vue";
 import VizCards from "./components/VizCards.vue";
 import BottomNav from "./components/BottomNav.vue";
 
+
 export default {
   name: 'App',
   components: { Landing, LineChart, VizCards, BottomNav },
   data() {
     return {
-      activeView: "LineChart"
+      activeView: "LineChart",
+      dataset: null
     }
   },
   methods: {
     toggleModal() {
       this.showModal = !this.showModal
-    }
+    },
+    
   }
 };
 </script>
