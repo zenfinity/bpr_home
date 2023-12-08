@@ -64,7 +64,7 @@ export default {
     // 3. Creating the Chart Axes
     var x = d3.scaleTime().range([0, width]);
 
-    var y = d3.scaleLinear().range([height, 1]);
+    var y = d3.scaleLinear().range([height, 0]);
 
     //5. Appending the Axes to the Chart
     g.append("g")
