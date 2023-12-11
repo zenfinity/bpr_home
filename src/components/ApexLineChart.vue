@@ -48,9 +48,22 @@ export default {
             enabled: false,
           },
         },
+        dataLabels: {
+              enabled: false,
+            },
         xaxis: {
           categories: dates,
+          title: {
+                text: 'Date'
+              }
         },
+        yaxis: {
+              title: {
+                text: 'Energy Use (kWh)'
+              },
+              min: 0,
+              max: 1000
+            },
         stroke: {
           curve: "straight",
         },
@@ -77,7 +90,7 @@ export default {
       },
       series: [
         {
-          name: "series-1",
+          name: "Energy Use (kWh)",
           data: kWh,
         },
       ],
