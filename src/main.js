@@ -2,8 +2,17 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import '/src/css/tachyons/tachyons.css'
+import VueApexCharts from "vue3-apexcharts";
 
 // import VueRouter from 'vue-router'
+
+// Initialize the Supabase JS client to access api
+// import { createClient } from '@supabase/supabase-js'
+
+// Vue.prototype.$supabase = createClient(import.meta.env.VITE_APP_SUPABASE_URL, import.meta.env.VITE_APP_SUPABASE_KEY)
+
+// Make a request
+// const { data: todos, error } = await supabase.from('todos').select('*')
 
 
 
@@ -21,5 +30,6 @@ import '/src/css/tachyons/tachyons.css'
 // library.add(faUserSecret)
 
 const app = createApp(App)
+.use(VueApexCharts)
 .mount('#app')
 

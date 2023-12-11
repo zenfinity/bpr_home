@@ -10,8 +10,8 @@
         class="link gray f5 f4-ns dib mr4 pa2 mh2"
         href="#"
         title="Energy Use"
-        :class="{ active: activeView === 'LineChart' }"
-      @click="activeView = 'LineChart'"
+        :class="{ active: activeView === 'ApexLineChart' }"
+      @click="activeView = 'ApexLineChart'"
         >Energy Use</a
       >
     </div>
@@ -26,14 +26,15 @@ import Landing from "./components/Landing_.vue";
 import LineChart from "./components/LineChart.vue";
 import VizCards from "./components/VizCards.vue";
 import BottomNav from "./components/BottomNav.vue";
+import ApexLineChart from "./components/ApexLineChart.vue";
 
 
 export default {
   name: 'App',
-  components: { Landing, LineChart, VizCards, BottomNav },
+  components: { Landing, VizCards, BottomNav, ApexLineChart },
   data() {
     return {
-      activeView: "LineChart",
+      activeView: "ApexLineChart",
       dataset: null
     }
   },
