@@ -4,6 +4,7 @@ import App from './App.vue'
 import '/src/css/tachyons/tachyons.css'
 import VueApexCharts from "vue3-apexcharts";
 
+
 // import VueRouter from 'vue-router'
 
 // Initialize the Supabase JS client to access api

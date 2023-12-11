@@ -9,19 +9,16 @@
 </template>
 
 <script>
-import { createClient } from "@supabase/supabase-js";
-
-const supabase = createClient(
-  import.meta.env.VITE_APP_SUPABASE_URL,
-  import.meta.env.VITE_APP_SUPABASE_KEY
-);
+import { ref, onMounted } from 'vue'
+import { supabase } from '../lib/supabaseClient'
 
 // Make a request
 // const supabase = this.$supabase
 const kwhTableResponse = await supabase.from("monthlyUseXCel").select("*");
+console.log(kwhTableResponse)
 console.log(kwhTableResponse.data[0]["date"]);
 
-const dates = [];
+const dates = []
 
 kwhTableResponse.data.forEach((element) => {
   dates.push(element.date);
@@ -34,6 +31,11 @@ kwhTableResponse.data.forEach((element) => {
 });
 
 console.log({ kWh });
+
+// async function getTable() {
+//     const { data mm } = await supabase.from('countries').select()
+//     countries.value = data
+//   }
 
 export default {
   name: "Chart",
