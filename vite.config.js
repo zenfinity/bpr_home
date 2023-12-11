@@ -10,4 +10,7 @@ export default defineConfig({
   plugins: [
     vue(),
     dsv()],
+    build: {
+      target: 'esnext' //browsers can handle the latest ES features
+    }
 })
