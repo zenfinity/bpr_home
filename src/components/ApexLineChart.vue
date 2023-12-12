@@ -9,16 +9,16 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
-import { supabase } from '../lib/supabaseClient'
+import { ref, onMounted } from "vue";
+import { supabase } from "../lib/supabaseClient";
 
 // Make a request
 // const supabase = this.$supabase
 const kwhTableResponse = await supabase.from("monthlyUseXCel").select("*");
-console.log(kwhTableResponse)
+console.log(kwhTableResponse);
 console.log(kwhTableResponse.data[0]["date"]);
 
-const dates = []
+const dates = [];
 
 kwhTableResponse.data.forEach((element) => {
   dates.push(element.date);
@@ -47,23 +47,30 @@ export default {
           zoom: {
             enabled: false,
           },
+          background: 'none'
         },
         dataLabels: {
-              enabled: false,
-            },
+          enabled: false,
+        },
         xaxis: {
           categories: dates,
           title: {
-                text: 'Date'
-              }
+            text: "Date",
+          },
+          type: 'datetime',
         },
         yaxis: {
-              title: {
-                text: 'Energy Use (kWh)'
-              },
-              min: 0,
-              max: 1000
+          title: {
+            text: "Energy Use (kWh)",
+          },
+          min: 0,
+          max: 1000,
+          labels: {
+            formatter: function (val) {
+              return val.toFixed(0);
             },
+          },
+        },
         stroke: {
           curve: "straight",
         },
@@ -72,6 +79,7 @@ export default {
           align: "center",
         },
         grid: {
+            borderColor: '#767676',
           //   row: {
           //     colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
           //     opacity: 0.5,
