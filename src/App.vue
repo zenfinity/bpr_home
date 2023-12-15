@@ -7,8 +7,8 @@
         class="link gray f5 f4-ns dib mr4 pa2 mh2"
         href="#"
         title="Energy Use"
-        :class="{ active: activeView === 'ApexLineChart' }"
-        @click="activeView = 'ApexLineChart'"
+        :class="{ active: activeView === 'EnergyUse' }"
+        @click="activeView = 'EnergyUse'"
         >Energy Use</a
       >
       <a
@@ -21,24 +21,23 @@
       >
     </div>
   </nav>
+  <!-- Shown view component selected from above  -->
   <component :is="activeView"></component>
-  <!-- <VizCards v-show="activeView === 'coolVizzes'"/>
-  <LineChart v-show="activeView === 'energyChart'"/> -->
+
 </template>
 
 <script>
 import Landing from "./components/Landing_.vue";
-import LineChart from "./components/LineChart.vue";
 import VizCards from "./components/VizCards.vue";
 import BottomNav from "./components/BottomNav.vue";
-import ApexLineChart from "./components/ApexLineChart.vue";
+import EnergyUse from "./views/energyUse.vue"
 
 export default {
   name: "App",
-  components: { Landing, VizCards, BottomNav, ApexLineChart },
+  components: { Landing, VizCards, BottomNav, EnergyUse },
   data() {
     return {
-      activeView: "ApexLineChart",
+      activeView: "EnergyUse",
       dataset: null,
     };
   },

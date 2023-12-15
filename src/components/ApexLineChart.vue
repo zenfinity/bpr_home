@@ -47,7 +47,7 @@ export default {
           zoom: {
             enabled: false,
           },
-          background: 'none'
+          background: "none",
         },
         dataLabels: {
           enabled: false,
@@ -57,7 +57,7 @@ export default {
           title: {
             text: "Date",
           },
-          type: 'datetime',
+          type: "datetime",
         },
         yaxis: {
           title: {
@@ -75,11 +75,11 @@ export default {
           curve: "straight",
         },
         title: {
-          text: "Condo Energy Use",
+          text: "Monthly Energy Use",
           align: "center",
         },
         grid: {
-            borderColor: '#767676',
+          borderColor: "#767676",
           //   row: {
           //     colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
           //     opacity: 0.5,
@@ -94,6 +94,19 @@ export default {
             shadeTo: "light",
             shadeIntensity: 0.65,
           },
+        },
+        tooltip: {
+          enabled: true,
+          x: {
+            show: false,
+            format: "MMM yyyy",
+          },
+          y: {
+            show: false,
+            format: "MMM yyyy",
+            formatter: undefined,
+          }
+          
         },
       },
       series: [

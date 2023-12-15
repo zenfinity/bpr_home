@@ -17,6 +17,6 @@ template {
 }
 
 .active {
-  border: 0.25rem 0.125rem 0.25rem solid #555;
-  border-bottom: none;
+  /* border: 0.25rem 0.125rem 0.25rem solid #555; */
+  border-bottom: 0.25rem solid #555;
 }
