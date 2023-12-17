@@ -3,7 +3,7 @@
     <h2 class="gray tc underline">Exploring Work From Home Energy</h2>
     <ApexLineChart />
 
-    <div class="tc f3">
+    <div class="tc f3 pv2">
       <i class="fa-solid fa-arrow-down green ph2"></i>
       <span class="gray" v-text="reduction + '% over period'"></span>
     </div>
