@@ -15,7 +15,7 @@ import { supabase } from "../lib/supabaseClient";
 // Make a request
 // const supabase = this.$supabase
 const summaryTableResponse = await supabase.from("summaryUseXCel").select("*");
-console.log(summaryTableResponse);
+// console.log(summaryTableResponse);
 // console.log(kwhTableResponse.data[0]["date"]);
 
 const years = [];

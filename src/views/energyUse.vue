@@ -3,6 +3,7 @@
   <article class="pv3 ph5">
     <h2 class="gray tc underline">Exploring Work From Home Energy</h2>
     <ApexLineChart />
+    <h2 class="gray tc" v-text="'Reduction of total use over period: ' + reduction + '%'"></h2>
     <ApexBarChart />
   </article>
   
@@ -11,11 +12,25 @@
 <script>
 import ApexLineChart from '../components/ApexLineChart.vue';
 import ApexBarChart from '../components/ApexBarChart.vue';
+
+import { supabase } from "../lib/supabaseClient";
+
+// Make a request
+// const supabase = this.$supabase
+const summaryTableResponse = await supabase.from("summaryUseXCel").select("*");
+// console.log(summaryTableResponse);
+// console.log(summaryTableResponse.data[0].sum)
+
+// percent_decrease = ((kWh_2021 - kWh_2023) / kWh_2021) * 100
+const percentReduced = ((summaryTableResponse.data[0].sum - summaryTableResponse.data[2].sum) / summaryTableResponse.data[0].sum) * 100
+// console.log(percentReduced.toFixed(2))
 export default {
   name: "EnergyUse",
   components: { ApexLineChart, ApexBarChart },
   data() {
-    return {};
+    return {
+      reduction: percentReduced.toFixed(0)
+    };
   },
   methods: {},
 };
