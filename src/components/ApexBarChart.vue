@@ -2,7 +2,7 @@
   <div class="mt2 mh5 flex flex-column justify-center items-center">
     <apexchart
       width="500"
-      type="line"
+      type="bar"
       :options="options"
       :series="series"></apexchart>
   </div>
@@ -14,23 +14,40 @@ import { supabase } from "../lib/supabaseClient";
 
 // Make a request
 // const supabase = this.$supabase
-const kwhTableResponse = await supabase.from("monthlyUseXCel").select("*");
-// console.log(kwhTableResponse);
+const summaryTableResponse = await supabase.from("summaryUseXCel").select("*");
+console.log(summaryTableResponse);
 // console.log(kwhTableResponse.data[0]["date"]);
 
-const dates = [];
+const years = [];
 
-kwhTableResponse.data.forEach((element) => {
-  dates.push(element.date);
+summaryTableResponse.data.forEach((element) => {
+  years.push(element.year);
 });
 
-const kWh = [];
+const sum = [];
 
-kwhTableResponse.data.forEach((element) => {
-  kWh.push(element.kWh);
+summaryTableResponse.data.forEach((element) => {
+  sum.push(element.sum);
 });
 
-// console.log({ kWh });
+const mean = [];
+
+summaryTableResponse.data.forEach((element) => {
+  mean.push(element.mean);
+});
+
+const min = [];
+
+summaryTableResponse.data.forEach((element) => {
+  min.push(element.min);
+});
+
+const max = [];
+
+summaryTableResponse.data.forEach((element) => {
+  max.push(element.max);
+});
+
 
 // async function getTable() {
 //     const { data mm } = await supabase.from('countries').select()
@@ -43,42 +60,49 @@ export default {
     return {
       options: {
         chart: {
-          id: "basic-line",
+          id: "basic-bar",
           zoom: {
             enabled: false,
           },
           background: "none",
+          stacked: false,
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            dataLabels: {
+              position: "top",
+            },
+          },
         },
         dataLabels: {
           enabled: false,
         },
         xaxis: {
-          categories: dates,
+          categories: years,
           title: {
-            text: "Date",
+            text: "Year",
           },
-          type: "datetime",
         },
         yaxis: {
           title: {
             text: "Energy Use (kWh)",
           },
-          min: 0,
-          max: 1000,
           labels: {
             formatter: function (val) {
               return val.toFixed(0);
             },
           },
         },
-        stroke: {
-          curve: "straight",
-        },
+        // stroke: {
+        //   curve: "straight",
+        // },
         title: {
-          text: "Monthly Energy Use",
+          text: "Yearly Energy Use",
           align: "center",
         },
         grid: {
+          show: true,
           borderColor: "#767676",
           //   row: {
           //     colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
@@ -105,16 +129,28 @@ export default {
             show: false,
             format: "MMM yyyy",
             formatter: undefined,
-          }
-          
+          },
         },
       },
       series: [
         {
-          name: "Energy Use (kWh)",
-          data: kWh,
+          name: "Total",
+          data: sum,
+        },
+        {
+          name: "Average",
+          data: mean,
+        },
+        {
+          name: "Minimum",
+          data: min,
+        },
+        {
+          name: "Maximum",
+          data: max,
         },
       ],
+      
     };
   },
 };
