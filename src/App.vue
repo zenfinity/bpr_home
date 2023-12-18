@@ -29,12 +29,11 @@
 <script>
 import Landing from "./components/Landing_.vue";
 import VizCards from "./components/VizCards.vue";
-import BottomNav from "./components/BottomNav.vue";
 import EnergyUse from "./views/energyUse.vue"
 
 export default {
   name: "App",
-  components: { Landing, VizCards, BottomNav, EnergyUse },
+  components: { Landing, VizCards, EnergyUse },
   data() {
     return {
       activeView: "EnergyUse",
