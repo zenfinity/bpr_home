@@ -15,7 +15,7 @@ import { ref } from 'vue'
       </h1>
       <img class="w-50" src="/src/assets/img/bluepredvesica_v5.4_vert.png" alt="Blue Plus Red Logo">
       <h2 class="fw2 f4 lh-copy mt0 mb3">
-        Helping inspire discovery.
+        Inspiring discovery of connections.
       </h2>
       <p class="fw1 f5 mt0 mb3">
         Bespoke visualizations. Software development. Consulting.

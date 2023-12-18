@@ -9,7 +9,7 @@
         title="Energy Use"
         :class="{ active: activeView === 'EnergyUse' }"
         @click="activeView = 'EnergyUse'"
-        >Energy Use</a
+        >Energy Use.</a
       >
       <a
         class="link gray f5 f4-ns dib pa2 mh2"
@@ -17,7 +17,7 @@
         title=""
         :class="{ active: activeView === 'VizCards' }"
         @click="activeView = 'VizCards'"
-        >Cool Vizzes. (Not mine.)</a
+        >Cool Vizzes (not mine).</a
       >
     </div>
   </nav>
