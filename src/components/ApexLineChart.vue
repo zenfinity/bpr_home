@@ -54,14 +54,38 @@ export default {
         },
         xaxis: {
           categories: dates,
-          title: {
-            text: "Date",
-          },
+          // title: {
+          //   text: "Date",
+          // },
           type: "datetime",
+          labels: {
+            show: true,
+            rotate: -45,
+            rotateAlways: false,
+            hideOverlappingLabels: true,
+            showDuplicates: false,
+            trim: false,
+            minHeight: undefined,
+            maxHeight: 120,
+            style: {
+              // colors: [
+              //   "#7D7D7D",
+              //   "#7D7D7D",
+              //   "#7D7D7D",
+              //   "#7D7D7D",
+              //   "#7D7D7D",
+              //   "#7D7D7D",
+              // ],
+              // fontSize: "12px",
+              // fontFamily: "Helvetica, Arial, sans-serif",
+              // fontWeight: 400,
+              // cssClass: "apexcharts-xaxis-label",
+            },
+          },
         },
         yaxis: {
           title: {
-            text: "Energy Use (kWh)",
+            text: "kWh",
           },
           min: 0,
           max: 1000,
@@ -69,10 +93,15 @@ export default {
             formatter: function (val) {
               return val.toFixed(0);
             },
+            style: {
+              colors: ["#7D7D7D"],
+
+            },
           },
         },
         stroke: {
           curve: "straight",
+          width: 3,
         },
         title: {
           text: "Monthly Energy Use",
@@ -89,10 +118,10 @@ export default {
           mode: "dark",
           palette: "palette10",
           monochrome: {
-            enabled: false,
-            color: "#255aee",
+            enabled: true,
+            color: "#7D7D7D",
             shadeTo: "light",
-            shadeIntensity: 0.65,
+            shadeIntensity: 1,
           },
         },
         tooltip: {
@@ -105,8 +134,7 @@ export default {
             show: false,
             format: "MMM yyyy",
             formatter: undefined,
-          }
-          
+          },
         },
       },
       series: [

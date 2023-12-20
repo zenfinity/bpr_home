@@ -73,24 +73,41 @@ export default {
             dataLabels: {
               position: "top",
             },
+            columnWidth: '50%',
           },
+        },
+        fill: {
+          opacity: 0.8,
+          pattern: {
+            width: 2,
+            // height: 6,
+            // strokeWidth: 2,
+          }
         },
         dataLabels: {
           enabled: false,
         },
         xaxis: {
           categories: years,
-          title: {
-            text: "Year",
-          },
+          // title: {
+          //   text: "Year",
+          // },
+          labels: {
+            // style: {
+            //   colors: ["#7D7D7D", "#7D7D7D", "#7D7D7D"],
+            // },
+          }
         },
         yaxis: {
           title: {
-            text: "Energy Use (kWh)",
+            text: "kWh",
           },
           labels: {
             formatter: function (val) {
               return val.toFixed(0);
+            },
+            style: {
+              colors: ["#7D7D7D"],
             },
           },
         },
@@ -150,7 +167,7 @@ export default {
           data: max,
         },
       ],
-      
+
     };
   },
 };
