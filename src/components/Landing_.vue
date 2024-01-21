@@ -29,6 +29,10 @@ import { ref } from 'vue'
           href="https://github.com/zenfinity">
           Some of my work <i class="fa-brands fa-github"></i>
         </a>
+        <a class="f6 br-pill bg-bpr-purple no-underline dim light-gray ba b--dark-gray pv2 ph3 dib mr3"
+          href="https://blog.blueplusred.com">
+          Blog <i class="fa-solid fa-blog"></i>
+        </a>
       </div>
     </article>
 </template>
